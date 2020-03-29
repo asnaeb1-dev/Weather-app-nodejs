@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' href='/css/main.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBS tutorial</title>
+</head>
+<body>
+    {{>header}}
+    <h1>This is a weather app!</h1>
+    <p> Weather info: </p>
+    <div id='input-field'>
+        <input id='location-bar' type='text' placeholder="Enter location..."/>
+        <button id='search'>Search</button>
+    </div>
+    <div id='weather-info'>
+        <p class='weather-details'> Temperature: </p>
+        <p class='weather-details'> Humidity:</p>
+        <p class='weather-details'> Pressure: </p>
+        <p class='weather-details'> Winds: </p>
+        <p class='weather-details'> Weather: </p>
+        <p class='weather-details'> Lat/Lon: </p>
+    </div>
+    {{>footer}}
+</body>
+<script src='/js/code.js'></script>
+</html>
