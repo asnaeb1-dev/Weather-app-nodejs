@@ -4,7 +4,7 @@ let weather_details  = document.getElementsByClassName('weather-details')
 let weatherDisplay = document.getElementById('weather-info');
 
 button.addEventListener('click', (event) => {
-    fetch('http://localhost:3000/weather?address=' + input.value)
+    fetch('/weather?address=' + input.value)
         .then(response => response.json())
         .then(json => {
             if(json.main.temp !== undefined){
